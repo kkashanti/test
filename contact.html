@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+        <link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+        <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        
+        <title>Contact Us</title>
+    </head>
+    <body>
+        <!--NAVBAR-->
+        <nav class="nav" id="navbar">
+            <div  id="logo" class="logo animate__animated animate__fadeInUp">
+                <a href="../index.html"><img class="logo-image" src="img/logo.svg" alt="logo"></a>
+            </div>          
+            <div class="container">
+                <div class="navlinks" id="navlinks">
+                    <a class="nav-link" href="index.html">About Us</a>
+                    <a class="nav-link" href="products.html">Products</a>
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </div>
+                <button title="burger" onclick="burgerclick()" class="burger" id="burger">
+                    <span class="burger-span"></span>
+                    <span class="burger-span"></span>
+                    <span class="burger-span"></span>
+                </button>
+            </div>
+        </nav>
+    <!--NAVBAR-->
+<div class="contact-container">
+  <div class="form-container">
+    <h1>Contact Us</h1>
+    <p>Fill up the form below to send us a message.</p>
+    <div class="contact-form">
+        <form action="https://api.web3forms.com/submit" method="POST" id="form">
+            <div class="form-grid">
+                <input type="hidden" name="access_key" value="02915345-15d9-491c-81f3-1073755c34ae" />
+                <input type="hidden" name="subject" value="New Submission from Mera Contact Form" />
+                <input type="checkbox" name="botcheck" style="display: none;" />
+
+                <div class="input-1">
+                    <label for="fname"><p>First Name</p></label>
+                    <input  class="input-box" type="text" name="name" placeholder="Your first name" id="first_name"  required />
+                </div>
+                <div class="input-2">
+                    <label for="lname"><p>Last Name</p></label>
+                    <input  class="input-box" type="text" name="last_name" placeholder="Your last name" id="lname"  required />
+                </div>
+                <div class="input-3">
+                    <label for="email"><p>Email</p></label>
+                    <input  class="input-box" type="email" name="email" id="email" placeholder="you@company.com" required />
+
+                </div>
+
+                <div class="input-4">
+                    <label for="lname"><p>Company</p></label>
+                    <input  class="input-box" type="text" name="company" placeholder="Your company" id="company"  required />
+
+                </div>
+                <div class="input-5">
+                    <label for="phone"><p>Phone</p></label>
+                    <input  class="input-box" type="text" name="phone" id="phone" placeholder="Where can we reach you?" required />
+                </div>
+                <div class="input-6">
+                </div>
+                <div class="input-7">
+                    <label for="message"><p>Your Message</p></label>
+                    <textarea class="input-box" rows="5" name="message" id="message" placeholder="Your Message" required></textarea>
+                </div>
+            </div>
+            <p class="small">*All fields required.</p>
+            <div class="h-captcha" data-captcha="true"></div>
+
+            <button type="submit" class="button-1" id="form-submit">Send Message
+            </button>
+            <div id="result"></div>
+        </form>
+    </div>
+</div>
+
+  </div>
+
+        <div class="foot">
+            <footer>
+                <div class="foot-container">
+                    <div class="foot-item">
+                        <p><span class="bold">MERA ENTERPRISES DMCC</span><br>
+                            Unit No: 2404, HDS Tower<br>
+                            Cluster F, Jumeirah Lake Towers,<br>
+                            Dubai, United Arab Emirates</p><p><a href="mailto:info@mera-international.com">info@mera-international.com</a></p>
+                    </div>
+                    <div class="foot-item"><p>About Mera</p><p>The Mera Group of Companies is an international conglomerate focusing on the distribution of agricultural commodities worldwide.</p></div>
+                </div>
+                <div class="foot-bottom">
+                    <ul>
+                        <li>© Copyright 2024</li>
+                        <li>Mera International</li>
+                        <li>All Rights Reserved</li>
+                    </ul>
+                </div>
+            </footer>
+        </div>  
+        <script src="lib/script.js"></script>
+        <script src="https://web3forms.com/client/script.js" async defer></script>
+        <script src="lib/form.js"></script>
+    </body>
+
+
+</html>
