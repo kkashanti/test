@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Mera International</title>
+        <title>Mera Global</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
@@ -15,7 +15,7 @@
         <link rel="manifest" href="img/site.webmanifest">
         <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
         <meta name="msapplication-TileColor" content="#da532c">
-        
+<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
     </head> 
     <body>
 <!--NAVBAR-->
@@ -25,7 +25,8 @@
 			</div>          
 			<div class="container">
 				<div class="navlinks" id="navlinks">
-					<a class="nav-link" href="index.html">About Us</a>
+					<a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="team.html">Team</a>
 					<a class="nav-link" href="products.html">Products</a>
                     <a class="nav-link" href="contact.html">Contact</a>
                 </div>
@@ -41,19 +42,24 @@
             <div class="landing-container">
                 <div class="landing-mask"></div>
 
-                <div class="landing-logo animate__animated animate__fadeInUp">
-                    <img src="img/logo.svg" alt="company logo">
+                <div class="logo-animation">
+                    <!-- <img src="img/logo.svg" alt="company logo" id="logo-large"> -->
+                    <dotlottie-player src="https://lottie.host/e28995e7-ca80-4801-8adf-df79f66be9e6/Q8Kuz9WykV.lottie" background="transparent" speed="1" style="width: 100%; max-width: 600px; height: auto; margin: auto;" direction="1" playMode="normal" autoplay></dotlottie-player>
                 </div>
+                <h4 class="animate__animated animate__fadeIn">Reliable sourcing, trusted distribution.</h4>
             </div>
+
             <div class="intro-section">
                 <div class="intro">
-                    <h4>Who we are</h4>
-                    <p>The Mera Group of Companies is a globally recognised conglomerate that operates across multiple countries.
+                    <h4 class="animate__animated animate__fadeIn" >Who we are</h4>
+                   <p class="animate__animated animate__fadeIn">The Mera Group of Companies is a globally recognised conglomerate that operates across multiple countries.
                         Led by the Babaker and Sahni families, we take great pride in our commitment to quality, innovation, and customer-centricity.
                     </p>
-                    <a href="products.html"><button class="button-1" role="button">More about us</button></a>
+                    <a href="team.html"><button class="button-1" role="button">Meet our team</button></a>
                 </div>
             </div>
+                <div class="para-1"><!--image by Freepik-->
+
     <div class="value-container">
             <div class="values">
                 <h4>Our values</h4>
@@ -66,17 +72,21 @@
                 </div>
             </div>    
     </div>
-    <div class="para-1">
+        <div class="mission">
+            <div class="intro animate__animated hide" id="mission">
+                <h4>Our mission</h4>
+                <p>In an age of increasing global population and growing demand for food, the Mera Group aims to lead as the premier global distributor of high-quality agricultural commodities. Our mission is to bolster supply chains, easing shortages and combating hunger. Through close collaboration with our clients, we aim to effectively manage their supply chains and mitigate risks.
+                </p>
+            </div>
+        </div>
+
       <div class="about-container">
           <div class="about-box animate__animated hide" id="about-section">
               <div class="about-text"><h4>What we do</h4><p>Since our inception in <span class="bold">2017</span>, we have been the foremost choice for sourcing premium wheat and corn across diverse industries.</p>
                   <a href="products.html"><button class="button-2" role="button">Discover our products</button></a>
               </div>
           </div>
-      </div>
 
-
-      <div class="about-container">
           <div class="about-box animate__animated hide" id="about-section-2">
               <div class="about-text"><h4>Where to find us</h4><p>We operate internationally with offices based in Dubai, the United Kingdom, and Switzerland.</p>
                   <a href="contact.html"><button class="button-2" role="button">Contact us</button></a>
@@ -86,27 +96,27 @@
 
     </div>
     
-    <div class="foot">
+        <div class="foot">
             <footer>
                 <div class="foot-container">
                     <div class="foot-item">
                         <p><span class="bold">MERA ENTERPRISES DMCC</span><br>
                             Unit No: 2404, HDS Tower<br>
                             Cluster F, Jumeirah Lake Towers,<br>
-                            Dubai, United Arab Emirates</p>
-                            <p><a href="mailto:info@mera-international.com">info@mera-international.com</a></p>
+                            Dubai, United Arab Emirates</p><p><a href="mailto:info@mera-international.com">info@mera-international.com</a></p>
                     </div>
                     <div class="foot-item"><p>About Mera</p><p>The Mera Group of Companies is an international conglomerate focusing on the distribution of agricultural commodities worldwide.</p></div>
                 </div>
                 <div class="foot-bottom">
                     <ul>
                         <li>© Copyright 2024</li>
-                        <li>Mera International</li>
+                        <li>Mera Global</li>
                         <li>All Rights Reserved</li>
                     </ul>
                 </div>
             </footer>
-    </div>     
+        </div>  
     <script src="lib/script.js"></script>
+
     </body>
 </html>
